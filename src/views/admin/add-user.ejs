@@ -1,0 +1,30 @@
+<form class="border border-primary shadow p-3 mb-5 bg-white" name="loginForm" method="POST" action="/api/admin/users">
+    <div class="form-group">
+        <label for="exampleInputEmail1"><h2>Register</h2></label>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Name</label>
+        <input type="text" class="form-control" name="name" aria-describedby="email">
+        <!-- <small id="email" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" name="email" aria-describedby="email">
+        <!-- <small id="email" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" name="password">
+    </div>
+    <div class="form-group">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="role" value="admin">
+            <label class="form-check-label" for="inlineRadio1">Admin</label>
+          </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="role" value="normal">
+            <label class="form-check-label" for="inlineRadio2">Normal</label>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
